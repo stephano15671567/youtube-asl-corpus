@@ -46,4 +46,4 @@ print(f"Porcentaje estimado de datos LIMPIOS: {tasa_exito:.2f}%")
 if total_errores > 0:
     df_errores = df.loc[list(set(errores_codificacion.index.tolist() + nulos.index.tolist() + anomalias_longitud.index.tolist()))]
     df_errores.to_csv('fragmentos_sospechosos.csv', index=False)
-    print("-> Se ha guardado un archivo 'fragmentos_sospechosos.csv' con las filas problemáticas para que las revises.")
+    print("-> Se ha guardado un archivo 'fragmentos_sospechosos.csv'")
